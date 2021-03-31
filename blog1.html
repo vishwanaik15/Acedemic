@@ -29,8 +29,8 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="">PYTHON NOTEBOOK</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html" target="_blank">Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://github.com/vishwanaik15/CIFAR-10/blob/main/CIFAR_10.ipynb" target="_blank">NOTEBOOK</a></li>
                
               </ul>
             </div>
@@ -43,12 +43,12 @@
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/titanic.jpg')"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cifar10.jpeg')"></div>
       <div class="container">
         <div class="content-center">
           
-          <div class="h2 title">Titanic Dataset</div>
-            <p class="category text-white">A data mining project to understand dataset ,basic classification and fratures of data.</p>
+          <div class="h2 title">Image Classification Using CIFAR-10 Dataset</div>
+            <p class="category text-white"></p>
         
       </div>
       
@@ -63,44 +63,138 @@
       <div class="row">
         <!--div class="col-lg-6 col-md-12"-->
           <div class="card-body">
-            <div class="h4 mt-0 title"><b>Titanic Survival Prediction</b></div>
-              <p>This is the legendary Titanic ML competition – the best, first challenge for you to dive into ML competitions and familiarize yourself with how the Kaggle platform works.
-
-<p>The competition is simple: use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.</p>
-<p>To predicat which passengers suvived in  the Titanic tragedy I have applied the tools of machine learning.</p>
-           <P>The steps I followed are as following.</P>
-            <p><b><h3>1.load train, test dataset using Pandas</h3></b></p>
-            <p>To load and read data I have used pandas.</p>
-            <p><img src="images/Capture1.PNG"></p>
-            <p><b><h3>2.Exploratory data analysis</h3></b></p>
-            <p>-->Printing first 5 rows of the train dataset.</p>
-            <p><img src="images/Capture2.PNG"></p>
-            <p><img src="images/Capture3.PNG"></p>
-            <p><img src="images/Capture4.PNG"></p>
-            <p><img src="images/Capture5.PNG"></p>
-            <p><img src="images/Capture6.PNG"></p>
-            <p><img src="images/Capture7.PNG"></p>
-              <p>-->Finding missing values</p>
-            <p><img src="images/Capture9.PNG"></p>
-            <p>Import python lib for visualization</p>
-            <p><img src="images/Capture8.PNG"></p>
-            <p>-->Similarly we can draw graph for different attributes </p>
-            <p><b><h3>3.Feature engineering</h3></b></p>
-            <p><img src="images/Capture10.PNG"></p>
-            <p><img src="images/Capture11.PNG"></p>
-            <p><img src="images/Capture12.PNG"></p>
-            <p><img src="images/Capture13.PNG"></p>
-            <p>--> similarly we can draw graph using different attributes.</p>
-            <p><b><h3>4.Modelling</h3></b></p>
-            <p>-->KNN Method.</p>
-            <p><img src="images/Capture13.PNG"></p>
-            <p>-->SVM Method.</p>
-            <p><img src="images/Capture15.PNG"></p>
-            <p><b><h3>5.Testing</h3></b></p>
-            <p><img src="images/Capture16.PNG"></p>
-            
-            
+            <div class="h4 mt-0 title"><b>Image Classifier Using CIFER-10 Dataset</b></div>
+              <p><h3><b>What is CIFAR-10?</h3></b></p>
+              <p>The CIFAR-10 dataset (Canadian Institute For Advanced Research) is a collection of images that are commonly used to train machine learning and computer vision algorithms. </p>
+              <p>It is one of the most widely used datasets for machine learning research.</p>
+              <p>The CIFAR-10 dataset contains 60,000 32x32 color images in 10 different classes.The 10 different classes represent airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships, and trucks.</p>
+              <p> There are 6,000 images of each class..From wchich 50,000 data are training data and 10,000 dataset is testing data set</p>
+           
+               <p><img src="images/cifar10.png"></p>
+               <p><h3>What is CNN</h3></p>
+               <p>A Convolutional Neural Network (ConvNet/CNN) is a Deep Learning algorithm which can take in an input image, assign importance (learnable weights and biases) to various aspects/objects in the image and be able to differentiate one from the other.</p>  
+                <p><img src="images/download.png"></p>      
+                      <p>  The CNN flows below layout to train the model.</p>
+               <p>Input > Conv (ReLU) > MaxPool > Conv (ReLU) > MaxPool > FC (ReLU) > FC (ReLU) > > 10 outputs</p>                                  <ul><li>Here, Conv is convolutional layer</li>
+        <li>RelU is a activation funtion.</li>
+                         <li>Maxpool is a pooling layer</li>
+                         <li>FC is a fully connected layer</li></ul>
+        <p><h3><b>Training an image classifier</b></h3></p>                                          
+           <ol>
+  <li>Load and normalizing the CIFAR10 training and test datasets using torchvision</li>
+  <li>Define a Convolutional Neural Network</li>
+  <li>Define a loss function</li>
+  <li>Train the network on the training data</li>
+  <li>Test the network on the test data</li>
+</ol> 
+              <p> <b><h4>Loading and normalizing CIFAR10</h4></b></p>
+              <p><img src="images/c1.PNG"></p>
+              <p><img src="images/c2.PNG"></p>
+              <p> <b><h4>Visualize 4 Random Training Images</h4></b></p>
+              <<p><img src="images/c3.PNG"></p>
+              <p> <b><h4> Define a Convolutional Neural Network</h4></b></p>
+              
+              <p><b><h5>What is Activation Function?</h5></b></p>
+              <p>The activation function is a node that is put at the end of or in between Neural Networks. They help to decide if the neuron would fire or not. “The activation function is the non linear transformation that we do over the input signal. This transformed output is then sent to the next layer of neurons as input.</p>
+              <p>Example of activation function.</p>
+              <ul><li>Sigmoid Function</li>
+              <li>Softmax Function</li>
+              <li>Rectified Linear Unit (ReLU) Function</li>
+              <li>Exponential Linea<p><b><h5>Here I have created 2 layer, 3 layer and 4 layer network topology in order to get maximum accuracy.</h5></b></p>
+              r Units (ELUs) Function</li></ul>
+              <p><b><h6>Network training topology for 2 layers CNN.</h6></b></p><p>I have used RelU activation function.</p>
+              <p><b><h5>What is ReLU Function?</h5></b></p>
+              <p>ReLu refers to the Rectifier Unit, the most commonly deployed activation function for the outputs of the CNN neurons. Mathematically, it's described as: Unfortunately, the ReLu function is not differentiable at the origin, which makes it hard to use with backpropagation training</p>
+              <p>Range: [ 0 to infinity)</p>
+              <p><img src="images/re.png"</p>
+              <p><b><h5>What is Fully connected layer?</h5></b></p>
+              <p>Fully Connected layers in a neural networks are those layers where all the inputs from one layer are connected to every activation unit of the next layer. In most popular machine learning models, the last few layers are full connected layers which compiles the data extracted by previous layers to form the final output. It is the second most time consuming layer second to Convolution Layer.</p>
+              <p><img src="images/fc.jpg"</p>
+              <p><b><h5>What is Pooling layer?</h5></b></p>
+              <p>A pooling layer is another building block of a CNN.</p>
+              <p><img src="images/po.png"</p>
+              <p>Its function is to progressively reduce the spatial size of the representation to reduce the amount of parameters and computation in the network. Pooling layer operates on each feature map independently.</p>
+              <p>The most common approach used in pooling is max pooling.</p>
+              <p><img src="images/po2.png"</p>
+              <p><h6>Here I have created 2 layer, 3 layer and 4 layer network topology in order to get maximum accuracy.</h6></p>
+              <p><b><h6>Network training topology for 2 layers CNN.</h6></b></p>
+              <p><img src="images/c4.PNG"</p>
+              <p><b><h6>Network training topology for 3 layer CNN.</h6></b></p>
+              <p><img src="images/c5.PNG"</p>
+              <p><b><h6>Network training topology for 4 layer CNN.</h6></b></p>
+              <p><img src="images/c6.PNG"</p>
+              <p><h5><b>Define a Loss function and optimizer</b></h5></p>
+              <p>For this model I have used Cross-Entorpy loss function Since I am classifying images into more than two classes we will use cross-entropy as a loss function. To optimize the network I will employ stochastic gradient descent (SGD) with momentum .</p>
+              <p><b><h5>What is Loss Function?</h5></b></p>
+              <p>The Loss Function is one of the important components of Neural Networks. Loss is nothing but a prediction error of Neural Net. And the method to calculate the loss is called Loss Function. In simple words, the Loss is used to calculate the gradients. And gradients are used to update the weights of the Neural Net.</p>
+              <p><h6>Different Loss Functions.</h6></p>
+              <ul><li>Binary Cross Entropy Loss — torch.nn.BCELoss()</li>
+              <li>Binary Cross Entropy with Logits Loss — torch.nn.BCEWithLogitsLoss()</li>
+              <li>Negative Log Likelihood — torch.nn.NLLLoss()</li>
+              <li>CrossEntropyLoss — torch.nn.CrossEntropyLoss() - Most Common</li></ul>
+              <p><b><h5>cross-Entropy Loss</h5></b></p>
+              <p>Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability value between 0 and 1. Cross-entropy loss increases as the predicted probability diverges from the actual label. So predicting a probability of .012 when the actual observation label is 1 would be bad and result in a high loss value. A perfect model would have a log loss of 0.</p>
+              <p><img src="images/cross_entropy.png"</p>
+              <p><b><h5>What is SGD?</h5></b></p>
+              <p>Stochastic gradient descent (often abbreviated SGD) is an iterative method for optimizing an objective function with suitable smoothness properties (e.g. differentiable or subdifferentiable). It can be regarded as a stochastic approximation of gradient descent optimization, since it replaces the actual gradient (calculated from the entire data set) by an estimate thereof (calculated from a randomly selected subset of the data). Especially in high-dimensional optimization problems this reduces the computational burden, achieving faster iterations in trade for a lower convergence rate.</p>
+              <p><h6>Different optimizer:</h6></p>
+              
              
+              <ul><li>torch.optim.Adagrad</li>
+              <li>torch.optim.Adam</li>
+              <li>torch.optim.Adamax</li>
+              <li>torch.optim.ASGD</li>
+              <li>torch.optim.LBFGS</li>
+              <li>torch.optim.RMSProp</li>
+              <li>torch.optim.Rprop</li>
+              <li>torch.optim.SGD</li></ul>
+              <p>For this model I have used Cross-Entorpy loss function Since I am classifying images into more than two classes we will use cross-entropy as a loss function. To optimize the network I will employ stochastic gradient descent (SGD) with momentum .</p>
+             <p><b><h5>Train the network</h5></b></p>
+             <p><b><h6>I have used SGD optimizer to tain 2 layer CNN.</h6></b></p>
+             <p><img src="images/c7.PNG"></p>
+             <p><img src="images/c8.PNG"></p>
+             <p><img src="images/c9.PNG"></p>
+             <p><b><h5>Train the netwok for 3 layer topology(Adam Optimizer)</h5></b></p>
+             <p><img src="images/c10.PNG"></p>
+             <p><img src="images/c11.PNG"></p>
+             <p><img src="images/c12.PNG"></p>
+             <p><b><h5>Train the netwok for 4 layer topology</h5></b></p>
+             <p><img src="images/c13.PNG"></p>
+             <p><img src="images/c14.PNG"></p>
+             <p><img src="images/c15.PNG"></p>
+             <p><b><h5>Test the network on the test data</h5></b></p>
+             <p><img src="images/c16.PNG"</p>
+             <p><h5>Now let see Accuracy for each network topology</h5></p>
+             <p><h6>Accuracy of 2 layer netwok topology:(SGD)</h6></p>
+             <p><img src="images/c17.PNG"></p>
+             <p><h6>Now let's see what are the classes performed with highest accuracy for 2 layer:</h6></p>
+             <p><img src="images/c18.PNG"></p>
+             <p><img src="images/c19.PNG"></p>
+             <p><h6>Accuracy of 3 layer netwok topology:(Adam)</h6></p>
+             <p><img src="images/c20.PNG"></p>
+             <p><h6>Now let's see what are the classes performed with highest accuracy for 3 layer:</h6></p>
+             <p><img src="images/c21.PNG"></p>
+             <p><img src="images/c22.PNG"></p>
+             <p><h6>Accuracy of 4 layer netwok topology:(SGD)</h6></p>
+             <p><img src="images/c23.PNG"></p>
+             <p><h6>Now let's see what are the classes performed with highest accuracy for 3 layer:</h6></p>
+             <p><img src="images/c24.PNG"></p>
+             <p><img src="images/c25.PNG"></p>
+             <p>Bar graph for Accuracy performance of different layers</p>
+             <p><img src="images/c26.PNG"></p>
+             <p><h5>References</h5></p>
+             <p><ul><li>https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html</li>
+             <li>Optimizer:r[https://towardsdatascience.com/optimizers-for-training-neural-network-59450d71caf6#:~:text=Optimizers%20are%20algorithms%20or%20methods,order%20to%20reduce%20the%20losses.&text=Optimization%20algorithms%20or%20strategies%20are,the%20most%20accurate%20results%20possible.]</li>
+             <li>Conv2d[https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html]</li>
+             <li>Pooling Layer[https://www.geeksforgeeks.org/cnn-introduction-to-pooling-layer/]</li>
+             <li>Fully connected layers[https://towardsdatascience.com/convolutional-neural-network-17fb77e76c05]</li>
+             <li>https://medium.com/swlh/image-classification-with-cnn-4f2a501faadb</li>
+             <li>https://www.stefanfiott.com/machine-learning/cifar-10-classifier-using-cnn-in-pytorch/</li>
+             <li>https://towardsdatascience.com/pytorch-basics-how-to-train-your-neural-net-intro-to-cnn-26a14c2ea29</li>
+             </ul></p>
+             
+             
+              
               
           </div>
         </div>
