@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vishwa Naik</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip"></a>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://github.com/vishwanaik15/DMASSIGNMENT02/blob/main/Naik_02.ipynb" target="_blank">NOTEBOOK</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/main.png')"></div>
+      <div class="container">
+        <div class="content-center">
+          
+          <div class="h2 title">concept of overfitting using the Higher order linear regression.</div>
+            <p class="category text-white"></p>
+        
+      </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+             <div class="section" id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <!--div class="col-lg-6 col-md-12"-->
+          <div class="card-body">
+            <div class="h4 mt-0 title"><b>Assignment 2:</b></div>
+             <p><h3><b>Task:</b></h3></p>
+             <p><b>The goal of this assignment is to learn about the concept of overfitting using the Higher order linear regression</b></p>
+             <p><h5><b>My work:</b></h5></p>
+        <p><ul><li>Visualization of Concept of Over fitting usinf linear regression</li>
+        <li>Used polynomial functions fit on our model</li>
+        <li>Findout that Degree=3 is the best model.</li></ul></p>
+             <p><h5>First we will learn about what is overfitting and Underfitting?</h5></p>
+             <p><b><h5>Overfitting</h5></b></p>
+             <p><ul><li>Overfitting is a modeling error that occurs when a function is too closely fit to a limited set of data points</li>
+             <li>Financial professionals must always be aware of the dangers of overfitting a model based on limited data.</li>
+             <li>Overfitting happens when Data is small and model is complex</li></ul></p>
+             <p><img src="images/overfitting-1024x433.webp"</p>
+             <p><h5>How to Detect Overfitting?</h5></p>
+                 <p><ul><li>Before tesing a model it is impossible too detect overfitting.</li>
+                 <p> <li>It can help address the inherent characteristic of overfitting, which is the inability to generalize data sets. The data can, therefore, be separated into different subsets to make it easy for training and testing. The data is split into two main parts, i.e., a test set and a training set.</li>
+                 <li>The training set represents a majority of the available data (about 80%), and it trains the model. The test set represents a small portion of the data set (about 20%), and it is used to test the accuracy of the data it never interacted with before. By segmenting the dataset, we can examine the performance of the model on each set of data to spot overfitting when it occurs, as well as see how the training process works.</li>
+                     <li>The performance can be measured using the percentage of accuracy observed in both data sets to conclude on the presence of overfitting. If the model performs better on the training set than on the test set, it means that the model is likely overfitting.</li></ul></p>
+                 <p><img src="images/Train-Test-Split-Diagram.jpg"</p>
+                 <p><h5>How to Reduce Overfitting?</h5></p>
+                 <p><ul><li>Increase training data.</li>
+                 <li>Reduce model complexity.</li>
+                 <li>Early stopping during the training phase (have an eye over the loss over the training period as soon as loss begins to increase stop training).</li>
+                 <li>Ridge Regularization and Lasso Regularization</li>
+                 <li>Use dropout for neural networks to tackle overfitting.</li>
+                 <li>Cross-Validation is also helpfull to reduce overfitting.</li></ul></p>
+                 <p><b><h5>Underfitting:</h5></b></p>
+                 <p><ul><li>Underfitting refers to a model that can neither model the training data nor generalize to new data.</li>
+
+                        <li>An underfit machine learning model is not a suitable model and will be obvious as it will have poor performance on the training data.</li>
+
+                        <li>Underfitting is often not discussed as it is easy to detect given a good performance metric. The remedy is to move on and try alternate machine learning algorithms. Nevertheless, it does provide a good contrast to the problem of overfitting.</li></ul></p>
+                        <p><h5>How to Detect Underfitting?</h5></p>
+                        <p><ul><li>A model under fits when it is too simple with regards to the data it is trying to model.</li>
+                        <li>One way to detect such a situation is to use the bias-variance approach, which can be represented like this:</li></ul>
+                        </p>
+                        <p><img src="images/under.png"></p>
+                        <p><ul><li>Your model is under fitted when you have a high bias.</li></ul></p>
+                        <p><h5>How to Prevent Underfitting?</h5></p>
+                        <p><ul><li>Increase more features in data.</li>
+                        <li>Increased fracture expands the hypothesis space.</li>
+                        <li>Increase the trainning error.</li></ul></p>
+                        <p><h6>Overfitting VS Underfitting:</h6></p>
+                        <p><img src="images/uvso.png" align="center"></p>
+              <p><h5><b>Process :</b></h5></p>
+              
+              <p><b><h6>What is scikit-learn?</h6></b></p>
+              <p><img src="images/skit.png"</p>
+              <p><ul><li>Scikit-learn is an open source machine learning library that supports supervised and unsupervised learning. It also provides various tools for model fitting, data preprocessing, model selection and evaluation, and many other utilities.</li>
+              <li>Scikit-learn provides dozens of built-in machine learning algorithms and models, called estimators. Each estimator can be fitted to some data using its fit method.</li></ul></p>
+              <p>The fit method generally accepts 2 inputs:</p>
+              <p><ul><li>The samples matrix (or design matrix) X. The size of X is typically (n_samples, n_features), which means that samples are represented as rows and features are represented as columns.</li>
+              <li>The target values y which are real numbers for regression tasks, or integers for classification (or any other discrete set of values). For unsupervized learning tasks, y does not need to be specified. y is usually 1d array where the i th entry corresponds to the target of the i th sample (row) of X.</li></ul></p>
+              <p>Both X and y are usually expected to be numpy arrays or equivalent array-like data types, though some estimators work with other formats such as sparse matrices.</p>
+              <p><b><h6>What is RMSE – Root Mean Square Error in Python?</h6></b></p>
+              <p>Before rmse undertand what is error matrix:</p>
+              <p><ul><li>Error metrics enable us to track the efficiency and accuracy through various metrics</li>
+                             <li>Mean Square Error(MSE)</li>
+                             <li> Root Mean Square Error(RMSE)</li>
+                             <li>R-square</li> 
+                             <li>Accuracy</li>
+                  <li>MAPE</li></ul></p>
+              <p><b>RMSE</b></p>
+              <p><ul><li>RMSE is an acronym for Root Mean Square Error, which is the square root of value obtained from Mean Square Error function.</li>
+                      <li>Using RMSE, we can easily plot a difference between the estimated and actual values of a parameter of the model.</li></ul></p>
+                      <p><h5><b>Linear Regression</b></h5></p>
+                      <p><img src="images/Linear.png"></p>
+                      <p><ul><li>Linear regression is an approach for predicting a response using a single feature.</li>
+                      <li>Linear regression calculates the estimators of the regression coefficients or simply the predicted weights, denoted with 𝑏₀, 𝑏₁, …, 𝑏ᵣ.</li></ul></p>
+                      <p><b><h5>Linear regression has multiple types</h5></b></p>
+                      <p><ul><ol>Simple Linear Regression</ol>
+                      <ol>Multiple Linear Regression</ol>
+                      <ol>Polynomial Regression</ol></ul></p>
+                      <p><h5><b>Here, I have used Polynomial Regression</b></h5></p>
+                      <p><h6><b>Polynomial Regression</b></h6></p>
+                      <p>Polynomial Regression is a form of linear regression in which the relationship between the independent variable x and dependent variable y is modeled as an nth degree polynomial. Polynomial regression fits a nonlinear relationship between the value of x and the corresponding conditional mean of y, denoted E(y |x)</p>
+                      <p><img src="images/poly.png"></p>
+                      <p><h5 text-align: center>y = a + bx + e</h5></p>
+                      <p>here,y is dependent variable, a is y intercept, b is the slope and e is the error rate.</p>
+                      <p> we can model it for nth value.</p>
+                      <p><h5>y = a + b1x + b2x^2 +....+ bnx^n</h5></p>
+                      
+
+              <p>Here, I have imported datasets, linear_model and train_test_split feactures from skitlearn library. </p>
+              <p><h6>Step : 1</h6></p>
+            <p><b>Importing required dependencies</b></p>             
+            <p><img src="images/l1.PNG"></p>
+            <p><h6>Step : 2</h6></p>
+            <p><b>A. Generate 20 data pairs (X, Y) using y = sin(2*pi*X) + 0.1 *  N</b></p>
+            <p><ul><li>Use uniform distribution between 0 and 1 for X.</li>
+            <li>Sample N from the normal gaussian distribution.</li></ul></p>
+            <p><img src="images/l2.PNG"></p>            
+             <p><img src="images/l3.PNG"></p>
+             <p><h6>Use 10 for train and 10 for test</h6></p>
+             <p><img src="images/l4.PNG"></p>
+             <p><img src="images/l5.PNG"></p>
+             <p><img src="images/l6.PNG"></p>
+             <p><img src="images/l7.PNG"></p>
+             
+             <p><h6>Step 3:</h6></p>
+             <p><b>B. Using root mean square error, find weights of polynomial regression for order is 0, 1, 3, 9</b></p>
+             <p><img src="images/l8.PNG"></p> 
+              <p><h6>Step 4:</h6></p>
+              <p><b>C. Display weights in table</b></p>
+              <p><img src="images/l9.PNG"</p>
+              <p><h6>Step 5:</h6></p>
+              <p><b>D. Draw a chart of fit data</b></p>
+              <p><img src="images/l10.PNG"></p>
+              <p><img src="images/l11.PNG"></p>
+              <p><img src="images/l12.PNG"></p>
+              <p><img src="images/l13.PNG"></p>
+              <p><img src="images/l14.PNG"></p>
+              <p><img src="images/l15.PNG"></p>
+              <p><h6>Step 6:</h6></p>
+              <p><b>E. Draw train error vs test error</b></p>
+              <p><img src="images/l16.PNG"></p>
+              <p><img src="images/l7.PNG"></p>
+              <p><h6>Step 7:</h6></p>
+              <p>Here I have used X,Y = zip(*sorted(zip(X, Y))) to sort my list so that graph repsentation is uniform other vise data points is more scattered.</p>
+              <p><b>F. Now generate 100 more data and fit 9th order model and draw fit.</b></p>
+              <p><img src="images/l18.PNG"></p>
+              <p><img src="images/l19.PNG"></p>
+              <p><b>Now, I have selected 20 data and fit 9th order model and draw fit</b></p>
+              <p><img src="images/l20.PNG"></p>
+              <p><img src="images/l21.PNG"></p>
+              <p><h6>Step 8:</h6></p>
+              <p><b>G. Now we will regularize using the sum of weights.</b></p>
+              <p><img src="images/data.PNG"></p>
+              <p><img src="images/l22.PNG"></p>
+              <p><b>H. Draw chart for lambda is 1, 1/10, 1/100, 1/1000, 1/10000, 1/100000</b></p>
+              <p><img src="images/l23.PNG"></p>
+              <p><img src="images/l24.PNG"></p>
+              <p><img src="images/l25.PNG"></p>
+              <p><img src="images/l26.PNG"></p>
+              
+              <p><b>Graph for test and train error according to lamda:</b></p>
+              <p><img src="images/l27.PNG"></p>
+              <p><img src="images/l28.PNG"></p>
+              <p><h6>Finding:</h6></p>
+              <p><b>J. Based on the best test performance, what is your model?</b></p>
+              <p>From given model of X_testdata and Y_testdata and given 0, 1, 3, 9 degrees, I can conclude that for Degree = 3, model gives best performance of all.</p>
+              <p><h6>References:</h6></p>
+              <p><ul><li><a href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html" target="_blank">https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html</a></li>
+                  <li><a href="https://scikit-learn.org/stable/modules/linear_model.html" target="_blank">https://scikit-learn.org/stable/modules/linear_model.html</a></li>
+                  <li><a href="https://corporatefinanceinstitute.com/resources/knowledge/other/overfitting/" target="_blank">https://corporatefinanceinstitute.com/resources/knowledge/other/overfitting/</a></li>
+                  <li><a href="https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/" target="_blank">https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/</a></li>
+                  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html" target="_blank">https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html</a></li>
+                  <li><a href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html" target="_blank">https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html</a></li>
+                  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html" target="_blank">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html</a></li>
+                  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html" target="_blank">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html</a></li>
+                  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html" target="_blank">https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html</a></li>
+                  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html" target="_blank">https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html</a></li>
+                  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html" target="_blank">https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html</a></li>
+                  <li><a href="https://daviddalpiaz.github.io/r4sl/regression-for-statistical-learning.html" target="_blank">https://daviddalpiaz.github.io/r4sl/regression-for-statistical-learning.html</a></li>
+                  </ul></p>
+
+</div>
+</div>
+</div>
+            <footer class="footer">
+      <div class="h4 title text-center">Vishwa Naik</div>
+      <div class="text-center text-muted">
+        <p>&copy; All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
+             
+       
