@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vishwa Naik</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip"></a>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html" target="_blank">Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://colab.research.google.com/drive/19B-tG-UV6mu9Im7TkJfcEXBcqBDw-aAt?usp=sharing" target="_blank">NOTEBOOK</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/phone.jpeg')"></div>
+      <div class="container">
+        <div class="content-center">
+          
+          <div class="h2 title">Trem Project:Mobile Phone Recommendation</div>
+           
+            <p class="category text-white"></p>
+            <a class="btn btn-primary" href="Project%20Proposal.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Project Proposal</a> 
+            <a class="btn btn-primary" href="Sketch%20of%20application.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Sketch of UI</a> 
+                    
+      </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+             <div class="section" id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <!--div class="col-lg-6 col-md-12"-->
+          <div class="card-body">
+            <div class="h4 mt-0 title"><b>Trem Project:Mobile Phone Recommendation</b></div>
+              <p><h3><b>Why this reccomendation application?</h3></b></p>
+              <p>Mobile phone is the widely used devices and everybody gets confused while buying new one. While Searching for which device to by people gets confused with lot of reviews and rating.</p>
+<p>So, to clear the confusion I made a application which will help the user to find the mobile phone from the review and rating score.</p>
+<p>
+The user needs to enter revies and rating and the machine learning classifier algorithm will do a task and suggest the mobile phones to user.
+ </p>
+               <p><h3><b>Dataset:</b></h3></p>
+        <ul><li>1.4 million cell phone reviews</li>
+            <li><a href:"https://www.kaggle.com/masaladata/14-million-cell-phone-reviews">https://www.kaggle.com/masaladata/14-million-cell-phone-reviews</a></li></ul>
+                      
+         <p><h3><b>Libraries used in project</b></h3></p>                                          
+           <ol>
+  <li>train_test_split:To split data in to train and test.(I have split data in to 80:20 ratio)</li>
+  <li>TfidfVectorizer:Convert a collection of raw documents to a matrix of TF-IDF features.</li>
+  <li>TfidfTransformer:Transform a count matrix to a normalized tf or tf-idf representation</li>
+  <li>MultinomialNB: The multinomial distribution normally requires integer feature counts. However, in practice, fractional counts such as tf-idf may</li>
+  <li>RidgeClassifier:This classifier first converts the target values into {-1, 1} and then treats the problem as a regression task (multi-output regression in the multiclass case).</li>
+  <li>LinearSVC:Similar to SVC with parameter kernel=’linear’, but implemented in terms of liblinear rather than libsvm, so it has more flexibility in the choice of penalties and loss functions and should scale better to large numbers of samples.</li>
+  <li>accuracy_score:In multilabel classification, this function computes subset accuracy: the set of labels predicted for a sample must exactly match the corresponding set of labels in y_true.</li>
+  <li>nltk:1.word_tokenize2.stop words</li>
+</ol> 
+            <p> <b><h4>Method:</h4></b></p>
+            <p><ul><ol>
+            <li>Used pandas datafram to read dataset.(data.csv)</li>
+            <li>.Perfomed data pre processing.<p>Dara preprocessing is most crucial task in text analysis as well as in deep learning tasks. If you do not perform any pre processing on your raw data, then it will affect your model's performance and to your final result. Generally, in this step we remove emojis, stop words, some rare occurring words from text. Also lower capitalization and tokenization are performed. In preprocessing, I removed all the rows having no values in comment column, as without comment value there is nothing to predict. To remove stop words from comments, first, I tokenized those comments using tokenizer tool provided by Natural Language toolkit (NLTK), and then removed those stop words. In nltk, there is one class "corpus" which contains list of these stop words. Along with them, comments are also converted into lower alphabets using lower() function.</p></li>
+            <li>Data Visualization:For data Visualization I have used matplotlib, seaborn libraries. Data is postulated by heatmap, bar graph.</li>
+<li>Divide data in to train and test. For this I have used Train-Test-Split function.</li>
+             <li>Model for classification.:
+From many classification models like:Naive Bayes, Support vector machine, random forest, ridge regression, linear regression, etc. I have used linear support vector machine, Navie bayes and rigid classifier.</li>
+
+<li>Performance evaluation of algorithms: We must know how our algorithm is  working. For that purpose, some accuracy measures, error measurement techniques are used. Such as, confusion matrix, F1 score, precision, recall, etc.</li></ol></ul></p>
+              
+              <p> <b><h3>Classifier explanation:</h3></b></p>
+              <p><h3><ol>Multinomial Naive Bayes:</ol></h3></p>
+              <p><ol>MultinomialNB implements the naive Bayes algorithm for multinomially distributed data, and is one of the two classic naive Bayes variants used in text classification (where the data are typically represented as word vector counts, although tf-idf vectors are also known to work well in practice).</ol></p>
+              
+              <p><h3><ol>Ridge Classifier:</ol></h3></p>
+              <p><ol>The Ridge Classifier, based on Ridge regression method, converts the label data into [-1, 1] and solves the problem with regression method. The highest value in prediction is accepted as a target class and for multiclass data muilti-output regression is applied.</ol></p>
+              <p><h3><ol>Linear Support vector machine:</ol></h3></p>
+              <p><ol>In machine learning, support-vector machines are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis</ol></p>
+              <p></p>
+               <p><h3>Accuracy and F1 score for each classifer:</h3></p>
+
+            <p><h4>Linear Support Vector Machine</h4></p>
+            <p>Accuracy: 57.73387725168446%</p>
+            <p>F1 Score: 0.58</p>
+            <p><h4>Rigit Classifier</h4></p>
+            <p>Accuracy: 56.466058578172984 %</p>
+            <p>F1 Score: 0.56</p>
+            <p><h4>Naive Bayes</h4><p>
+            <p>Accuracy: 53.6609066324426 %</p>
+            <p>F1 Score: 0.54</p>
+            <p><h3>Result:</h3></p>
+            <p><img src="images/result.PNG"></p>
+            <p><h4>Difference over References:</h4></p>
+             <p><ul><li>The reference I have used has not done much with dataset used torch for the accuracy and classification.</li>
+             <li>Dataset has 6 csv files with data I have merged all the file to generate big dataset of size 921 megabutes.</li>
+             <li>I used TFIDFVectorizer.</li>
+             <li>I have used different classifer from skitlearn libraries for reccomendation analysis.</li>
+             <li>Reference:https://www.kaggle.com/satyamkryadav/multiclass-mobilesentiments-83</li></ul></p>
+             <p><h4>Challenged Faced:</h4></p>
+             <p><ul><li>The dataset was having different csv files I merges all files in single and made a dataset big enoughr for analysis.</li>
+             <li>The dataset was too large for the systems we are using, so I need to pre process data first in order to use it for training and testing. For pre processing I had to use case lowering, tokenization, regular expression for alphabets, punctuation removal and removing stop words.</li>
+             <li>The reference I used has torch but I used Clssifieres.</li>
+             </ul></p>
+             <p><h4>Contributions:</h4></p>
+             <p><ul><li>I hae used three classifier and then used the best one with highest accuracy for the final reccomendation system.</li>
+             <li>For my large dataset I have found linear support vector machine with highest accuracy so I uset it for final reccomendation.</li>
+             <li>Saved model in local system for further any classification purpose.</li>
+             <li>Made a application prototype for future use.https://proto.io/</li></ul></p>
+             <p><h5>Important Links:</h5></p>
+<p><ul><li><a href="https://github.com/vishwanaik15/DataMining_Project">GitHub:</a></li>
+             <li><a href="">Youtube video:</a></li>
+             <li><a href="https://vishwanaik15.github.io/Acedemic/">My website</a></li>
+             <li><a href="">Blog:</a></li>
+             <li><a href="https://colab.research.google.com/drive/19B-tG-UV6mu9Im7TkJfcEXBcqBDw-aAt?usp=sharing">Notebook:</a></li></ul></p>
+             
+              
+             <p><h5>References</h5></p>
+             <p><ul><li><a href="https://www.kaggle.com/satyamkryadav/multiclass-mobilesentiments-83">https://www.kaggle.com/satyamkryadav/multiclass-mobilesentiments-83</a></li>
+             <li><a href="Dataset Reading:https://towardsdatascience.com/loading-large-datasets-in-pandas-11bdddd36f7b">Dataset Reading:https://towardsdatascience.com/loading-large-datasets-in-pandas-11bdddd36f7b</a></li>
+                 <li><a href="Data preprocessing:https://scikit-learn.org/stable/modules/preprocessing.html">Data preprocessing:https://scikit-learn.org/stable/modules/preprocessing.html</a></li>
+             <li><a href="https://www.nltk.org/">Text classification:https://www.nltk.org/</a></li>
+             <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">Vectorizing using Scikit-learn API's:https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html</a></li>
+                 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html">Vectorizing using Scikit-learn API's:https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html</a></li>
+             <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html">Naive Bayes:https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html</a></li>
+             <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html">Linear support vector Machine:https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html</a></li>
+             <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html">Rigid Classifier:"https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html</a></li>
+             <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html">Confusion Matrix:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html</a></li>
+             <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html">Accuracy score:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html</a></li>
+             <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html">F1 Score:https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html</a></li>
+             <li><a href="https://seaborn.pydata.org/">Heatmap: https://seaborn.pydata.org/</a></li>
+            <li><a href="https://proto.io/">Application Sketch:https://proto.io/</a></li>
+             </ul></p>
+            
+             
+             
+              
+              
+          </div>
+        </div>
+</div>
+            <footer class="footer">
+      <div class="h4 title text-center">Vishwa Naik</div>
+      <div class="text-center text-muted">
+        <p>&copy; All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
+             
+       
